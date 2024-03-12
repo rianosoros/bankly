@@ -1,0 +1,4 @@
+- BUG #1: /login route doesnt handle cases where auth fails, also doesnt wait for async calls to finish
+- BUG #2: patch /username route doesnt check if the current user is an admin before allowing them to make changes to a user
+- BUG #3: delete /username route doesnt wait for the result of the async call before returning a response, might say something is deleted when it isnt
+- BUG #4: authUser function in auth.js doesnt handle cases where the token is missing or invalid properly
